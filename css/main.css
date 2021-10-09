@@ -218,3 +218,30 @@ footer .titulo-footer,
         height: 40px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .header-landing {
+        background-position: center;
+    }
+    .contenedor-card {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .contenedor-card-video {
+        margin-top: 0px;
+        width: 100%;
+        height: 65px;
+    }
+    .card-video {
+        width: 100%;
+    }
+    .contenedor-card-text {
+        margin-top: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .contenedor-card-text audio {
+        width: 100%;
+        height: 40px;
+    }
+}
