@@ -5,14 +5,21 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
+    outline: none;
 }
 
-.header-landing {
+.header-landing-photo {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(80deg, rgba(49, 7, 7, 0.5), rgba(26, 24, 24, 0.4)), url("../img/bg-landing-page.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.header-landing {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
 }
 
 nav {
@@ -28,6 +35,17 @@ nav {
     text-transform: uppercase;
     transition: 0.2s ease;
     cursor: pointer;
+}
+
+.principal {
+    background-color: rgb(231, 162, 162);
+}
+
+.titulo-cards {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 900;
 }
 
 .logo:hover {
@@ -93,7 +111,7 @@ nav ul li a:hover {
     margin-top: 25px;
     text-decoration: none;
     color: black;
-    background-color: #fff;
+    background-color: white;
     padding: 10px 15px;
     border-radius: 15px;
     font-weight: 700;
@@ -104,6 +122,8 @@ nav ul li a:hover {
 
 .contenido-header a:hover {
     transform: translateY(5px);
+    background-color: #5B2C6F;
+    color: white;
 }
 
 .contenedor-card-text h2 {
@@ -158,15 +178,17 @@ nav ul li a:hover {
     justify-content: center;
     align-self: center;
     border-radius: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.card-video:hover {
+    -webkit-box-shadow: 2px 1px 7px 3px rgba(91, 44, 111, 0.59);
+    box-shadow: 2px 1px 7px 3px rgba(91, 44, 111, 0.59);
 }
 
 footer {
     background-color: black;
     height: 80%;
-}
-
-.footer {
-    height: 70%;
 }
 
 footer .titulo-footer,
@@ -176,24 +198,114 @@ footer .titulo-footer,
 }
 
 .titulo-footer {
-    margin-top: 5px;
     font-weight: 900;
 }
 
 .redes-sociales {
     display: flex;
     justify-content: center;
-    color: white;
 }
 
 .redes-sociales i {
     font-size: 30px;
     padding: 20px;
     transition: 0.5s ease;
+    color: #5B2C6F;
 }
 
 .redes-sociales i:hover {
     transform: translateY(-5px);
+    color: white;
+}
+
+.contenedor-registro {
+    border-radius: 15px;
+    background-color: white;
+    max-width: 60%;
+    height: 400px;
+    margin: auto;
+}
+
+.contenedor-rg {
+    height: 400px;
+    display: flex;
+}
+
+.img-contendor-rg {
+    width: 100%;
+}
+
+.img-contendor-rg img {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-rg form {
+    width: 100%;
+    height: 90%;
+    margin: auto;
+}
+
+.inputs-rg {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-rg label {
+    margin: 8px 0;
+    color: #5B2C6F;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    align-self: left;
+    vertical-align: bottom;
+}
+
+.inputs-rg input {
+    border: none;
+    margin: 5px 0;
+    height: 25px;
+    transition: 0.8s ease;
+}
+
+.inputs-rg input:hover {
+    border-bottom: 1px solid black;
+}
+
+.button {
+    min-width: 35%;
+    display: inline-block;
+    margin: auto;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.button:hover {
+    transform: translateY(5px);
+    background-color: #5B2C6F;
+    color: white;
+}
+
+.button.morado {
+    background-color: #5B2C6F;
+    cursor: pointer;
+}
+
+.titulos {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 45px;
 }
 
 @media screen and (max-width: 800px) {
@@ -216,6 +328,9 @@ footer .titulo-footer,
     .contenedor-card-text audio {
         width: 80%;
         height: 40px;
+    }
+    .img-contendor-rg {
+        display: none;
     }
 }
 
@@ -243,5 +358,8 @@ footer .titulo-footer,
     .contenedor-card-text audio {
         width: 100%;
         height: 40px;
+    }
+    .img-contendor-rg {
+        display: none;
     }
 }
