@@ -1,23 +1,10 @@
 class UI {
-    /* static alerta(mensaje, classname) {
-         const div = document.createElement('div');
-         div.className = `alerta alerta-${classname}`;
-         div.appendChild(document.createTextNode(mensaje));
-
-         const contenedor = document.querySelector('#titulos');
-         const form = document.querySelector('#inputs-rg');
-         contenedor.insertBefore(div, form);
-     }*/
     limpiar() {
         let user = (document.getElementById("usuario").value = "");
         let email = (document.getElementById("correo").value = "");
         let pass = (document.getElementById("key").value = "");
     }
-    pasarPagina() {
-        window.location.href("principal-got.html");
-    }
 }
-
 
 function registroUsuarios() {
     let user = document.getElementById("usuario").value;
@@ -33,7 +20,6 @@ function registroUsuarios() {
 
         alert("Se ha creado su cuenta con el nombre: " + user)
         UI.limpiar();
-        pasarPagina();
     }
 }
 
@@ -45,7 +31,6 @@ function obtenerDatos() {
 
 
 window.addEventListener("load", function(event) {
-    this.localStorage.clear;
     let usuario = obtenerDatos();
     if (usuario === "" || usuario === null) {
         document.getElementById('usuariopage').innerHTML = "Sin cuenta";
@@ -55,9 +40,7 @@ window.addEventListener("load", function(event) {
 });
 
 
-fetch(
-        "https://gameofthrones-10de7-default-rtdb.firebaseio.com/gameofthrones.json"
-    )
+fetch("https://gameofthrones-10de7-default-rtdb.firebaseio.com/gameofthrones.json")
     .then((respuesta) => respuesta.json())
     .then((datos) => {
         let contenedor = document.querySelector(".card");
@@ -74,7 +57,7 @@ fetch(
             </div>
             <div>
             <p>Me considero ${personaje.nombre}<p>
-                <a class="button" href="#">Soy yo<span class="material-icons icons-vertical ">chevron_right</span></a>
+                <a  onclick="alertaaa('${personaje.perfil}', '${personaje.nombre}')"  class="button" href="#">Soy yo<span class="material-icons icons-vertical ">chevron_right</span></a>
             </div>
             
         </div>`;

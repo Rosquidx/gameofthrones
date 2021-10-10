@@ -1,166 +1,166 @@
-                @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;500;700&display=swap');
-                * {
-                    padding: 0%;
-                    margin: 0%;
-                    box-sizing: border-box;
-                    font-family: 'Work Sans', sans-serif;
-                    font-weight: 300;
-                    outline: none;
-                }
-                
-                 :root {
-                    --colorh1h2: #5B2C6F;
-                }
-                
-                body {
-                    background-color: black;
-                }
-                
-                nav {
-                    padding: 25px;
-                    display: flex;
-                    justify-content: space-between;
-                }
-                
-                .logo {
-                    color: white;
-                    font-size: 20px;
-                    font-weight: 1000;
-                    text-transform: uppercase;
-                    transition: 0.2s ease;
-                    cursor: pointer;
-                }
-                
-                nav ul {
-                    display: flex;
-                }
-                
-                nav ul li {
-                    margin-left: 15px;
-                    list-style: none;
-                    text-decoration: none;
-                }
-                
-                nav ul li a {
-                    font-size: 1em;
-                    color: white;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-                }
-                
-                nav ul li a:hover {
-                    text-decoration: underline;
-                }
-                
-                .titulo-cards {
-                    color: white;
-                    font-weight: 900;
-                    text-align: center;
-                    margin: 30px;
-                }
-                
-                .card {
-                    width: 100%;
-                    display: flex;
-                    gap: 50px;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-                
-                .card__nombre img {
-                    width: 320px;
-                    transition: 0.4s linear;
-                }
-                
-                .card__perfil {
-                    width: 310px;
-                    transition: all 0.5s ease-in-out;
-                }
-                
-                .card__nombre {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 8px;
-                }
-                
-                .card__nombre h2 {
-                    color: var(--colorh1h2);
-                    text-shadow: 2px 1px white;
-                    font-weight: 600;
-                    text-align: center;
-                }
-                
-                .card__descripcion p {
-                    color: white;
-                }
-                
-                .card__perfil:hover {
-                    transform: translateY(-5px);
-                }
-                
-                .card__nombre img:hover {
-                    opacity: 0.6;
-                }
-                
-                hr {
-                    width: 100%;
-                    height: 4px;
-                    background-color: rgb(248, 245, 245, 0.5);
-                    margin: 20px 5px;
-                }
-                
-                .button {
-                    width: 35%;
-                    display: inline-block;
-                    margin: auto;
-                    margin-top: 25px;
-                    text-decoration: none;
-                    color: black;
-                    background-color: white;
-                    padding: 10px 15px;
-                    border-radius: 15px;
-                    font-weight: 700;
-                    display: flex;
-                    align-items: center;
-                    transition: 0.5s ease;
-                }
-                
-                .button:hover {
-                    transform: translateY(5px);
-                    background-color: #5B2C6F;
-                    color: white;
-                }
-                
-                footer {
-                    margin-top: 150px;
-                    background-color: black;
-                    height: 80%;
-                }
-                
-                footer .titulo-footer,
-                .contenido-footer p {
-                    color: white;
-                    text-align: center;
-                }
-                
-                .titulo-footer {
-                    font-weight: 900;
-                }
-                
-                .redes-sociales {
-                    display: flex;
-                    justify-content: center;
-                }
-                
-                .redes-sociales i {
-                    font-size: 30px;
-                    padding: 20px;
-                    transition: 0.5s ease;
-                    color: var(--colorh1h2);
-                }
-                
-                .redes-sociales i:hover {
-                    transform: translateY(-5px);
-                    color: white;
-                }
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;500;700&display=swap");
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    outline: none;
+}
+
+:root {
+    --colorh1h2: #5b2c6f;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.titulo-cards {
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    margin: 30px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card__nombre img {
+    width: 320px;
+    transition: 0.4s linear;
+}
+
+.card__perfil {
+    width: 310px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card__nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.card__nombre h2 {
+    color: var(--colorh1h2);
+    text-shadow: 2px 1px white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card__descripcion p {
+    color: white;
+}
+
+.card__perfil:hover {
+    transform: translateY(-5px);
+}
+
+.card__nombre img:hover {
+    opacity: 0.6;
+}
+
+hr {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(248, 245, 245, 0.5);
+    margin: 20px 5px;
+}
+
+.button {
+    width: 35%;
+    display: inline-block;
+    margin: auto;
+    margin-top: 25px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.button:hover {
+    transform: translateY(5px);
+    background-color: #5b2c6f;
+    color: white;
+}
+
+footer {
+    margin-top: 150px;
+    background-color: black;
+    height: 80%;
+}
+
+footer .titulo-footer,
+.contenido-footer p {
+    color: white;
+    text-align: center;
+}
+
+.titulo-footer {
+    font-weight: 900;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales i {
+    font-size: 30px;
+    padding: 20px;
+    transition: 0.5s ease;
+    color: var(--colorh1h2);
+}
+
+.redes-sociales i:hover {
+    transform: translateY(-5px);
+    color: white;
+}
