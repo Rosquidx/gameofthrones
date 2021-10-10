@@ -29,6 +29,9 @@ function obtenerDatos() {
     return usuario;
 }
 
+function alerta(perfil, nombre) {
+    alert(`Estimado: ${obtenerDatos()}, te consideras una persona ${perfil} como el personaje ${nombre} `)
+}
 
 window.addEventListener("load", function(event) {
     let usuario = obtenerDatos();
@@ -57,7 +60,7 @@ fetch("https://gameofthrones-10de7-default-rtdb.firebaseio.com/gameofthrones.jso
             </div>
             <div>
             <p>Me considero ${personaje.nombre}<p>
-                <a  onclick="alertaaa('${personaje.perfil}', '${personaje.nombre}')"  class="button" href="#">Soy yo<span class="material-icons icons-vertical ">chevron_right</span></a>
+                <a  onclick="alerta('${personaje.perfil}', '${personaje.nombre}')"  class="button" href="#">Soy yo<span class="material-icons icons-vertical ">chevron_right</span></a>
             </div>
             
         </div>`;
